@@ -1,1 +1,0 @@
-package com.telusko.question_service.model;

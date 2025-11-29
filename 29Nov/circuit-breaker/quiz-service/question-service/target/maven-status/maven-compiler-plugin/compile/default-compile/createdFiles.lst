@@ -1,9 +1,0 @@
-com\telusko\question_service\repository\package-info.class
-com\telusko\question_service\repository\QuestionRepository.class
-com\telusko\question_service\controller\package-info.class
-com\telusko\question_service\controller\QuestionController.class
-com\telusko\question_service\QuestionServiceApplication.class
-com\telusko\question_service\model\Question.class
-com\telusko\question_service\service\package-info.class
-com\telusko\question_service\model\package-info.class
-com\telusko\question_service\service\QuestionService.class
