@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time - Test Your Knowledge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Front Page -->
+    <div id="frontPage" class="page active">
+        <div class="container">
+            <div class="quiz-icon">🎯</div>
+            <h1 class="main-heading">Quiz Time</h1>
+            <p class="subtitle">Test your knowledge with these fun questions</p>
+            <button id="startBtn" class="btn btn-primary">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quizPage" class="page">
+        <div class="container">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progressFill" class="progress-fill"></div>
+                </div>
+                <p class="question-counter">Question <span id="currentQuestion">1</span> of 5</p>
+            </div>
+
+            <div class="quiz-content">
+                <h2 id="questionText" class="question-text"></h2>
+                <div id="answersContainer" class="answers-container"></div>
+            </div>
+
+            <button id="nextBtn" class="btn btn-primary" disabled>Next</button>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="resultsPage" class="page">
+        <div class="container">
+            <div class="results-icon">🏆</div>
+            <h1 class="results-heading">Quiz Results</h1>
+            <div class="score-container">
+                <p class="score-text">You scored</p>
+                <p class="score-number"><span id="finalScore">0</span> out of 5</p>
+            </div>
+            <p class="encouragement">Good effort! Keep learning 📚</p>
+            <button id="restartBtn" class="btn btn-primary">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
