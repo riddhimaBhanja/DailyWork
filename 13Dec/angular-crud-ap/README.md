@@ -29,10 +29,10 @@ The project focuses on clarity, maintainability, and practical usage of Angular 
 ## Project Structure
 
 src/
+
 ├── app/
 
 │   ├── components/   
-
 │   ├── services/          
 │   ├── models/            
 │   ├── app.component.*    
@@ -128,6 +128,7 @@ This project helps in understanding:
 * Best practices for building scalable Angular applications
 
 ---
+
 
 
 
