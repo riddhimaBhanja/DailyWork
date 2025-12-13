@@ -28,16 +28,20 @@ The project focuses on clarity, maintainability, and practical usage of Angular 
 
 ## Project Structure
 
+## Project Structure
+
 src/
 ├── app/
-│   ├── components/        UI components
-│   ├── services/          Business logic and API calls
-│   ├── models/            Data models and interfaces
-│   ├── app.component.*    Root component
-│   └── app.routes.ts      Application routing
-├── assets/                Static assets
-├── environments/          Environment configurations
-└── main.ts                Application entry point
+│   ├── components/        
+│   ├── services/          
+│   ├── models/            
+│   ├── app.component.*    
+│   └── app.routes.ts      
+├── assets/                
+├── environments/          
+└── main.ts                
+
+---
 
 ---
 
@@ -124,5 +128,6 @@ This project helps in understanding:
 * Best practices for building scalable Angular applications
 
 ---
+
 
 
