@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "richa",
+      "email": "richa@mail.com"
+    },
+    {
+      "id": 2,
+      "name": "riddhima",
+      "email": "riddhima@mail.com"
+    },
+    {
+      "id": "ad19",
+      "name": "RIDDHIMA BHANJA",
+      "email": "richabhanja2003@gmail.com"
+    },
+    {
+      "id": "fd1d",
+      "name": "RIDDHIMA BHANJA",
+      "email": "22053182@kiit.ac.in"
+    },
+    {
+      "id": "c090",
+      "name": "RIDDHIMA BHANJA",
+      "email": "22053182@kiit.ac.in"
+    },
+    {
+      "id": "9c87",
+      "name": "RIDDHIMA BHANJA",
+      "email": "22053182@kiit.ac.in"
+    }
+  ]
+}

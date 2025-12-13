@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Edit User</h2>
+
+  <form [formGroup]="form" (ngSubmit)="updateUser()">
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+
+    <div style="margin-top: 15px;">
+      <button class="primary" type="submit">Update User</button>
+    </div>
+  </form>
+</div>

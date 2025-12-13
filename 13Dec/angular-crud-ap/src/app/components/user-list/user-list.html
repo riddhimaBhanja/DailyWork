@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>User List</h2>
+
+  <div style="text-align: right; margin-bottom: 10px;">
+    <a routerLink="/add">➕ Add New User</a>
+  </div>
+
+  <table class="user-table">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <a [routerLink]="['/edit', user.id]">Edit</a>
+        &nbsp;
+        <button class="danger" (click)="deleteUser(user.id!)">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </table>
+</div>

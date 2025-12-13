@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Add New User</h2>
+
+  <form (ngSubmit)="addUser()">
+    <label>Name</label>
+    <input
+      type="text"
+      [(ngModel)]="user.name"
+      name="name"
+      placeholder="Enter name"
+      required
+    />
+
+    <label>Email</label>
+    <input
+      type="email"
+      [(ngModel)]="user.email"
+      name="email"
+      placeholder="Enter email"
+      required
+    />
+
+    <div style="margin-top: 15px;">
+      <button class="primary" type="submit">Add User</button>
+    </div>
+  </form>
+</div>
