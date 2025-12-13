@@ -25,21 +25,23 @@ The project focuses on clarity, maintainability, and practical usage of Angular 
 * Testing: Vitest
 
 ---
-
 ## Project Structure
 
 src/
+
 ├── app/
-│   ├── components/       
-│   ├── services/         
-│   ├── models/           
-│   ├── app.component.*   
-│   └── app.routes.ts     
-├── assets/               
-├── environments/         
-└── main.ts               
+
+│   ├── components/        
+│   ├── services/          
+│   ├── models/            
+│   ├── app.component.*    
+│   └── app.routes.ts      
+├── assets/                
+├── environments/          
+└── main.ts                
 
 ---
+
 
 ## Getting Started
 
@@ -124,6 +126,7 @@ This project helps in understanding:
 * Best practices for building scalable Angular applications
 
 ---
+
 
 
 
