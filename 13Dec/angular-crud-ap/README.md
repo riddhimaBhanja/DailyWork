@@ -1,59 +1,128 @@
-# AngularCrudAp
+# Angular CRUD Application
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
+A simple and well-structured Angular application that demonstrates complete **CRUD (Create, Read, Update, Delete)** functionality.
+The project focuses on clarity, maintainability, and practical usage of Angular concepts, making it suitable for learning as well as further extension.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
 
-```bash
+* Full CRUD operations
+* Clean and modular component-based design
+* Centralized service layer for data handling
+* Reactive data flow
+* Scalable folder structure
+* Live reload during development
+
+---
+
+## Tech Stack
+
+* Frontend Framework: Angular (v21.0.3)
+* Language: TypeScript
+* Styling: CSS
+* Tooling: Angular CLI
+* Testing: Vitest
+
+---
+
+## Project Structure
+
+src/
+├── app/
+│   ├── components/        UI components
+│   ├── services/          Business logic and API calls
+│   ├── models/            Data models and interfaces
+│   ├── app.component.*    Root component
+│   └── app.routes.ts      Application routing
+├── assets/                Static assets
+├── environments/          Environment configurations
+└── main.ts                Application entry point
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Ensure the following are installed on your system:
+
+* Node.js (LTS version recommended)
+* npm
+* Angular CLI (v21 or higher)
+
+Verify Angular CLI installation by running:
+
+ng version
+
+---
+
+## Running the Application
+
+Start the development server:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to:
 
-## Code scaffolding
+[http://localhost:4200/](http://localhost:4200/)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The application will automatically reload whenever you make changes to the source files.
 
-```bash
+---
+
+## Code Scaffolding
+
+Generate Angular artifacts using the CLI:
+
 ng generate component component-name
-```
+ng generate service service-name
+ng generate pipe pipe-name
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+To see all available schematics:
 
-```bash
 ng generate --help
-```
 
-## Building
+---
 
-To build the project run:
+## Build for Production
 
-```bash
+Create an optimized production build:
+
 ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The compiled output will be available in the dist/ directory.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Testing
 
-```bash
+### Unit Tests
+
+Run unit tests using Vitest:
+
 ng test
-```
 
-## Running end-to-end tests
+### End-to-End Tests
 
-For end-to-end (e2e) testing, run:
+Angular CLI does not include an end-to-end testing framework by default.
+You may integrate tools such as Cypress or Playwright if required.
 
-```bash
 ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## Learning Objectives
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project helps in understanding:
+
+* Angular component lifecycle
+* Dependency injection using services
+* HTTPClient for API communication
+* Routing and navigation
+* Clean project organization
+* Best practices for building scalable Angular applications
+
+---
+
+
