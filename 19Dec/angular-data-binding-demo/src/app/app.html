@@ -1,0 +1,145 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <!-- 1. INTERPOLATION BINDING -->
+  <section class="demo-section">
+    <h2>1. Interpolation Binding {{ '{{}}' }}</h2>
+    <p>User Name: {{ userName }}</p>
+    <p>Current Date: {{ currentDate | date:'full' }}</p>
+    <p>Simple Math: 5 + 3 = {{ 5 + 3 }}</p>
+    <p>String Method: {{ userName.toUpperCase() }}</p>
+  </section>
+
+  <!-- 2. PROPERTY BINDING -->
+  <section class="demo-section">
+    <h2>2. Property Binding [property]</h2>
+    <img [src]="imageUrl" [alt]="title" [width]="imageWidth">
+    <br><br>
+    <button [disabled]="isDisabled">I'm a button</button>
+    <label>
+      <input type="checkbox" [(ngModel)]="isDisabled">
+      Toggle Button Disabled State
+    </label>
+    <p>Image width is bound to: {{ imageWidth }}px</p>
+  </section>
+
+  <!-- 3. TWO-WAY BINDING -->
+  <section class="demo-section">
+    <h2>3. Two-Way Binding [(ngModel)]</h2>
+    <div class="input-group">
+      <label>Enter your name:</label>
+      <input type="text" [(ngModel)]="userInput" placeholder="Type here...">
+      <p>You typed: <strong>{{ userInput }}</strong></p>
+    </div>
+
+    <div class="input-group">
+      <label>Email:</label>
+      <input type="email" [(ngModel)]="email" placeholder="your@email.com">
+      <p>Email: <strong>{{ email }}</strong></p>
+    </div>
+
+    <div class="input-group">
+      <label>Select a color:</label>
+      <select [(ngModel)]="selectedColor">
+        <option *ngFor="let color of colors" [value]="color">{{ color }}</option>
+      </select>
+      <p>Selected color: <strong [style.color]="selectedColor">{{ selectedColor }}</strong></p>
+    </div>
+  </section>
+
+  <!-- 4. EVENT BINDING -->
+  <section class="demo-section">
+    <h2>4. Event Binding (event)</h2>
+    <button (click)="incrementCounter()" class="btn-primary">Click Me!</button>
+    <p>Button clicked: <strong>{{ clickCount }}</strong> times</p>
+
+    <div class="button-group">
+      <button (click)="handleButtonClick('Button 1')" class="btn">Button 1</button>
+      <button (click)="handleButtonClick('Button 2')" class="btn">Button 2</button>
+      <button (click)="handleButtonClick('Button 3')" class="btn">Button 3</button>
+    </div>
+    <p *ngIf="lastClickedButton">Last clicked: <strong>{{ lastClickedButton }}</strong></p>
+
+    <div class="input-group">
+      <label>Input with event:</label>
+      <input type="text" (input)="onInputChange($event)" placeholder="Type to see console log">
+    </div>
+  </section>
+
+  <!-- 5. CLASS BINDING -->
+  <section class="demo-section">
+    <h2>5. Class Binding [class]</h2>
+    <div [class.active]="isActive" [class.error]="hasError" class="box">
+      <p>This box has dynamic classes</p>
+      <p>Active: {{ isActive }} | Error: {{ hasError }}</p>
+    </div>
+
+    <div class="button-group">
+      <button (click)="toggleActive()" class="btn">Toggle Active Class</button>
+      <button (click)="toggleError()" class="btn">Toggle Error Class</button>
+    </div>
+  </section>
+
+  <!-- 6. STYLE BINDING -->
+  <section class="demo-section">
+    <h2>6. Style Binding [style]</h2>
+    <div class="style-demo">
+      <p [style.font-size.px]="fontSize" [style.color]="textColor">
+        This text has dynamic styling!
+      </p>
+      <p>Font size: {{ fontSize }}px</p>
+    </div>
+
+    <div class="button-group">
+      <button (click)="increaseFontSize()" class="btn">Increase Font</button>
+      <button (click)="decreaseFontSize()" class="btn">Decrease Font</button>
+    </div>
+
+    <div class="input-group">
+      <label>Text Color:</label>
+      <select [(ngModel)]="textColor">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- 7. ATTRIBUTE BINDING -->
+  <section class="demo-section">
+    <h2>7. Attribute Binding [attr]</h2>
+    <table>
+      <tr>
+        <td [attr.colspan]="2">This cell spans 2 columns</td>
+      </tr>
+      <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+      </tr>
+    </table>
+    <br>
+    <button [attr.aria-label]="'Click count: ' + clickCount">
+      Accessible Button (check aria-label)
+    </button>
+  </section>
+
+  <!-- RESET BUTTON -->
+  <section class="demo-section">
+    <button (click)="resetAll()" class="btn-reset">Reset All Values</button>
+  </section>
+
+  <!-- SUMMARY -->
+  <section class="demo-section summary">
+    <h2>Data Binding Types Summary</h2>
+    <ul>
+      <li><strong>Interpolation:</strong> {{ '{{' }} value {{ '}}' }} - One-way from component to view</li>
+      <li><strong>Property Binding:</strong> [property]="value" - One-way from component to view</li>
+      <li><strong>Event Binding:</strong> (event)="handler()" - One-way from view to component</li>
+      <li><strong>Two-Way Binding:</strong> [(ngModel)]="value" - Two-way between component and view</li>
+      <li><strong>Class Binding:</strong> [class.className]="condition" - Conditional CSS classes</li>
+      <li><strong>Style Binding:</strong> [style.property]="value" - Dynamic inline styles</li>
+      <li><strong>Attribute Binding:</strong> [attr.attribute]="value" - For HTML attributes</li>
+    </ul>
+  </section>
+</div>
